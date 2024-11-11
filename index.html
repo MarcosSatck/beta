@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terror & Mistery</title>
+  <link rel="stylesheet" href="css/LoginStyle.css">
+  <script type="text/javascript" src="js/sound.js"></script>
+</head>
+<body>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('img/FinalFOn.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+     
+</style>
+    
+
+  <div class="wrapper">
+    <form id="loginForm">
+      <h2>Bienvenido</h2>
+      <div class="input-field">
+        <input type="text" id="username" required>
+        <label>Nombre De Usuario</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" required>
+        <label>Contraseña</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Recordar</p>
+        </label>
+        <a href="#">¿Has olvidado tu contraseña?</a>
+      </div>
+      <button type="submit">Ingresar</button>
+      <div class="register">
+        <p>¿No estás registrado? <a href="#">Registrate</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username === 'marco' && password === '123') {
+        window.location.href = 'menuindex.php';
+      } else {
+        alert('Nombre de usuario o contraseña incorrectos');
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CODIGO ANTIGUO:
+
+<!DOCTYPE html>
+Coding By CodingNepal - www.codingnepalweb.com 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terror & Mistery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body background="img/fondoOjos.jpg">
+  <div class="wrapper">
+    <form action="#">
+      <h2>Bienvenido</h2>
+        <div class="input-field">
+        <input type="text" required>
+        <label>Nombre De Usuario</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Contraseña</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Recordar</p>
+        </label>
+        <a href="#">¿Has olvidado tu contraseña?</a>
+      </div>
+      <button type="submit">Ingresar</button>
+      <div class="register">
+        <p>¿No estás registrado? <a href="#">Registrate</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+ <!-- ESO HAY QUE BORRAR POR QUE SE VE EN PANTALLA  .wrapper {
+  background-color: rgba(0, 0, 0, 0.5);  Fondo semitransparente 
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 100px auto;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-field label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ccc;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-field input:focus + label,
+.input-field input:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 10px;
+  color: #ff6347;
+  font-size: 12px;
+}
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forget a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register a {
+  color: #ff6347;
+  text-decoration: none;
+} 
+</style> -->
